@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -38,6 +41,18 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+        },
+        "accent-cyan": {
+          DEFAULT: "hsl(var(--accent-cyan))",
+          foreground: "hsl(var(--accent-cyan-foreground))",
+        },
+        "accent-magenta": {
+          DEFAULT: "hsl(var(--accent-magenta))",
+          foreground: "hsl(var(--accent-magenta-foreground))",
+        },
+        "soft-sky": {
+          DEFAULT: "hsl(var(--soft-sky))",
+          foreground: "hsl(var(--soft-sky-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
