@@ -146,13 +146,12 @@
     transform: translateY(0);
   }
 
-  /* Card hover effects */
-  .card-hover {
-    transition: all 0.3s ease;
-  }
-
-  .card-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px hsl(var(--primary) / 0.1);
+  /* Logo Image Constraints */
+  .logo-constraint {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 }

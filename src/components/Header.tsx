@@ -34,14 +34,14 @@ export function Header() {
       <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
         isScrolled || isMenuOpen ? 'bg-card/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}>
-        <div className="container mx-auto px-4 py-4 overflow-hidden">
+        <div className="container mx-auto px-4 py-1 overflow-hidden">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
-                <img src="/logo.png" alt="Ase Güvenlik" className="w-full h-full object-contain" />
+              <div className="w-[20px] h-[20px] rounded flex items-center justify-center overflow-hidden flex-shrink-0">
+                <img src="/logo.png" alt="Ase Güvenlik" className="w-full h-full object-contain logo-constraint align-middle" style={{ maxWidth: '20px', maxHeight: '20px', verticalAlign: 'middle' }} />
               </div>
-              <span className="font-inter font-semibold text-xl text-foreground">
+              <span className="font-inter font-semibold text-[16px] text-foreground leading-none">
                 Ase Güvenlik
               </span>
             </div>
@@ -90,7 +90,7 @@ export function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 text-foreground hover:text-primary transition-colors"
+              className="lg:hidden p-3 text-foreground hover:text-primary transition-colors ml-2"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

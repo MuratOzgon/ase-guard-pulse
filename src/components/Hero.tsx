@@ -14,11 +14,11 @@ export function Hero() {
       {/* Background Gradient */}
       <div className="absolute inset-0 hero-gradient opacity-5"></div>
       
-      <div className="container mx-auto px-3 py-2 lg:py-12">
+      <div className="container mx-auto px-3 py-8 lg:py-16">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 scroll-reveal">
-            <div className="space-y-4">
+            <div className="space-y-4 mt-8 lg:mt-12">
               <h1 className="text-4xl lg:text-6xl font-inter font-bold text-foreground leading-tight">
                 {t('hero.title')}{' '}
                 <span className="text-primary">{t('hero.titleBold')}</span>{' '}
