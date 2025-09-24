@@ -41,15 +41,15 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 section-light">
+    <section id="contact" className="py-4 lg:py-12 section-light">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 scroll-reveal">
+        <div className="text-center mb-6 lg:mb-12 scroll-reveal">
           <h2 className="text-3xl lg:text-5xl font-inter font-bold text-foreground mb-4">
             {t('contact.title')}
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-start">
           {/* Contact Info */}
           <div className="space-y-8 scroll-reveal">
             {contactInfo.map((info, index) => {

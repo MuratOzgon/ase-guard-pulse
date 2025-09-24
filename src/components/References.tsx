@@ -15,9 +15,9 @@ export function References() {
   ];
 
   return (
-    <section id="references" className="py-20 section-light">
+    <section id="references" className="py-4 lg:py-12 section-light">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 scroll-reveal">
+        <div className="text-center mb-6 lg:mb-12 scroll-reveal">
           <h2 className="text-3xl lg:text-5xl font-inter font-bold text-foreground mb-4">
             {t('references.title')}
           </h2>

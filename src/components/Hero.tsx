@@ -14,8 +14,8 @@ export function Hero() {
       {/* Background Gradient */}
       <div className="absolute inset-0 hero-gradient opacity-5"></div>
       
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-3 py-2 lg:py-12">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 scroll-reveal">
             <div className="space-y-4">

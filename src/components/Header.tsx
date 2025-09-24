@@ -31,10 +31,10 @@ export function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-card/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
+        isScrolled || isMenuOpen ? 'bg-card/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}>
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-4 overflow-hidden">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3">
@@ -98,20 +98,20 @@ export function Header() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="lg:hidden mt-4 pb-4 border-t border-border">
+            <div className="lg:hidden mt-4 pb-4 border-t border-border bg-card/95 backdrop-blur-sm shadow-lg z-[110]">
               <nav className="flex flex-col space-y-3 mt-4">
                 {navigation.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="font-inter text-foreground hover:text-primary transition-colors duration-200 py-2"
+                    className="font-inter text-foreground hover:text-primary transition-colors duration-200 py-2 px-4"
                   >
                     {item.label}
                   </a>
                 ))}
               </nav>
-              <div className="flex items-center justify-between mt-6 pt-4 border-t border-border">
+              <div className="flex items-center justify-between mt-6 pt-4 border-t border-border mx-4">
                 <div className="flex items-center space-x-1 bg-muted rounded-lg p-1">
                   <button
                     onClick={() => setLanguage('tr')}
@@ -143,7 +143,7 @@ export function Header() {
       </header>
 
       {/* Mobile WhatsApp Fixed Button */}
-      <div className="fixed bottom-6 right-6 z-50 lg:hidden">
+      <div className="fixed bottom-6 right-6 z-[90] lg:hidden">
         <Button asChild size="lg" className="whatsapp-gradient rounded-full shadow-lg hover:shadow-xl transition-shadow">
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <MessageCircle className="w-6 h-6" />
