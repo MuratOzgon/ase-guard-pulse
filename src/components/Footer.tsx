@@ -36,8 +36,8 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">A</span>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="/logo.png" alt="Ase Güvenlik" className="w-full h-full object-contain" />
               </div>
               <span className="font-inter font-semibold text-xl">
                 Ase Güvenlik

@@ -38,8 +38,8 @@ export function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">A</span>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="/logo.png" alt="Ase Güvenlik" className="w-full h-full object-contain" />
               </div>
               <span className="font-inter font-semibold text-xl text-foreground">
                 Ase Güvenlik
