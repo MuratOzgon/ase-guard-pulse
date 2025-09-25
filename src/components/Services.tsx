@@ -44,15 +44,15 @@ export function Services() {
       color: 'text-red-500'
     },
     {
-      icon: Construction,
-      title: t('services.barrier'),
+      icon: Camera,
+      title: t('services.cctv'),
       features: [
-        'Otopark bariyer sistemleri',
-        'Uzaktan kumanda kontrol',
-        'Araç sensör sistemi',
-        'Manuel açma özelliği'
+        'IP kamera sistemleri',
+        'Gece görüş teknolojisi',
+        'Uzaktan izleme',
+        'Hareket algılama'
       ],
-      color: 'text-accent-cyan'
+      color: 'text-blue-500'
     },
     {
       icon: Zap,
@@ -99,15 +99,15 @@ export function Services() {
       color: 'text-purple-500'
     },
     {
-      icon: Camera,
-      title: t('services.cctv'),
+      icon: Construction,
+      title: t('services.barrier'),
       features: [
-        'IP kamera sistemleri',
-        'Gece görüş teknolojisi',
-        'Uzaktan izleme',
-        'Hareket algılama'
+        'Otopark bariyer sistemleri',
+        'Uzaktan kumanda kontrol',
+        'Araç sensör sistemi',
+        'Manuel açma özelliği'
       ],
-      color: 'text-blue-500'
+      color: 'text-accent-cyan'
     },
     {
       icon: Phone,
