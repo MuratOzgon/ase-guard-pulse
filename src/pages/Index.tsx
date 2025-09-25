@@ -4,6 +4,7 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { WhyUs } from '@/components/WhyUs';
+import SeoVideo from '@/components/SeoVideo';
 import { Services } from '@/components/Services';
 import { References } from '@/components/References';
 import { FAQ } from '@/components/FAQ';
@@ -18,6 +19,12 @@ function MainContent() {
       <Header />
       <main>
         <Hero />
+        <SeoVideo
+          title="Ase Güvenlik Sistemleri Tanıtım"
+          description="Antalya ve çevresinde profesyonel güvenlik çözümleri."
+          mp4Src="/intro.mp4"
+          autoPlay={true}
+        />
         <WhyUs />
         <Services />
         <References />

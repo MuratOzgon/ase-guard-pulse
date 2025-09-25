@@ -48,32 +48,12 @@ export function Hero() {
           {/* Illustration */}
           <div className="flex justify-center lg:justify-end scroll-reveal">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl bg-gradient-to-br from-primary/10 to-accent-cyan/10 flex items-center justify-center">
-                <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-2xl bg-card shadow-2xl flex items-center justify-center">
-                  <div className="space-y-6 text-center">
-                    <div className="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                        <span className="text-primary-foreground font-bold text-xl">🛡️</span>
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="font-inter font-semibold text-lg text-primary">
-                        Güvenlik Sistemleri
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        Modern Teknoloji
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-accent-cyan/20 rounded-xl flex items-center justify-center animate-pulse">
-                <span className="text-2xl">📹</span>
-              </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent-magenta/20 rounded-xl flex items-center justify-center animate-pulse">
-                <span className="text-2xl">🚨</span>
+              <div className="w-full max-w-2xl aspect-[16/9] rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="/hero-image.jpg"
+                  alt="Ase Güvenlik Sistemleri - Güvenli Yaşam Teknolojileri"
+                  className="w-full h-full object-cover object-top scale-[1.05]"
+                />
               </div>
             </div>
           </div>
