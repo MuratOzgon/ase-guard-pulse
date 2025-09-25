@@ -22,7 +22,7 @@ function MainContent() {
         <SeoVideo
           title="Ase Güvenlik Sistemleri Tanıtım"
           description="Antalya ve çevresinde profesyonel güvenlik çözümleri."
-          mp4Src="/intro.mp4"
+          mp4Src="https://avsirmagulerturk.com.tr/wp-content/uploads/2024/09/appsgolem.com00-00-4000-00-57_Antalya_Konyaalt_DJI_Mini_4-Trim-Trim.mp4"
           autoPlay={true}
         />
         <WhyUs />
