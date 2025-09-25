@@ -21,7 +21,7 @@ const translations = {
     'nav.contact': 'İletişim',
 
     // Hero
-    'hero.title': 'İhtiyacınız Olan Her Türlü Konuda',
+    'hero.title': 'İhtiyacınız Olan Her Konuda',
     'hero.titleBold': 'Ase Güvenlik',
     'hero.titleEnd': 'Yanınızda!',
     'hero.subtitle': 'Antalya ve çevresinde profesyonel güvenlik çözümleri',
