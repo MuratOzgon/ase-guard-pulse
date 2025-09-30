@@ -39,10 +39,10 @@ export function Header() {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="w-[20px] h-[20px] rounded flex items-center justify-center overflow-hidden flex-shrink-0">
-                <img src="/logo.png" alt="Ase Güvenlik" className="w-full h-full object-contain logo-constraint align-middle" style={{ maxWidth: '20px', maxHeight: '20px', verticalAlign: 'middle' }} />
+                <img src="/logo.png" alt="Ase Güvenlik Sistemleri" className="w-full h-full object-contain logo-constraint align-middle" style={{ maxWidth: '20px', maxHeight: '20px', verticalAlign: 'middle' }} />
               </div>
               <span className="font-inter font-semibold text-[16px] text-foreground leading-none">
-                Ase Güvenlik
+                Ase Güvenlik Sistemleri
               </span>
             </div>
 

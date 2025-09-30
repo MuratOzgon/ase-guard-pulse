@@ -22,14 +22,14 @@ const translations = {
 
     // Hero
     'hero.title': 'İhtiyacınız Olan Her Konuda',
-    'hero.titleBold': 'Ase Güvenlik',
+    'hero.titleBold': 'Ase Güvenlik Sistemleri',
     'hero.titleEnd': 'Yanınızda!',
     'hero.subtitle': 'Antalya ve çevresinde profesyonel güvenlik çözümleri',
     'hero.ctaWhatsapp': 'WhatsApp\'tan Yaz',
     'hero.ctaServices': 'Hizmetler',
 
     // Why Us
-    'whyUs.title': 'Neden Ase Güvenlik?',
+    'whyUs.title': 'Neden Ase Güvenlik Sistemleri?',
     'whyUs.expert.title': 'Uzman Kurulum',
     'whyUs.expert.desc': 'Deneyimli teknisyenlerle profesyonel kurulum hizmeti',
     'whyUs.support.title': 'Hızlı Destek',
@@ -106,14 +106,14 @@ const translations = {
 
     // Hero
     'hero.title': 'For All Your Needs,',
-    'hero.titleBold': 'Ase Güvenlik',
+    'hero.titleBold': 'Ase Güvenlik Sistemleri',
     'hero.titleEnd': 'Is With You!',
     'hero.subtitle': 'Professional security solutions in and around Antalya',
     'hero.ctaWhatsapp': 'Message on WhatsApp',
     'hero.ctaServices': 'Services',
 
     // Why Us
-    'whyUs.title': 'Why Ase Güvenlik?',
+    'whyUs.title': 'Why Ase Güvenlik Sistemleri?',
     'whyUs.expert.title': 'Expert Installation',
     'whyUs.expert.desc': 'Professional installation service with experienced technicians',
     'whyUs.support.title': 'Fast Support',
