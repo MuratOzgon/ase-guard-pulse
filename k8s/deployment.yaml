@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ase-guard-pulse-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ase-guard-pulse
+  template:
+    metadata:
+      labels:
+        app: ase-guard-pulse
+    spec:
+      containers:
+      - name: ase-guard-pulse
+        # ÖNEMLİ: Bu alanı kendi Docker imajınızın yoluyla değiştirin
+        image: muratozgon/ase-guard-pulse:latest
+        ports:
+        - containerPort: 80
