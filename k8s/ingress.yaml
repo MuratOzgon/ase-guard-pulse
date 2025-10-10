@@ -1,0 +1,36 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ase-guard-pulse-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"  # Eğer cert-manager kullanıyorsanız
+spec:
+  ingressClassName: nginx  # NGINX Ingress Controller kullanıyorsanız
+  tls:
+  - hosts:
+    - aseguvenlik.com
+    - www.aseguvenlik.com
+    secretName: aseguvenlik-tls
+  rules:
+  - host: aseguvenlik.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ase-guard-pulse-service
+            port:
+              number: 80
+  - host: www.aseguvenlik.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ase-guard-pulse-service
+            port:
+              number: 80

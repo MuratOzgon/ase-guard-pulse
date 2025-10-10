@@ -1,0 +1,60 @@
+# ASE Guard Pulse Uygulaması Konfigürasyon Değerleri
+# Bu dosya deployment konfigürasyonunu özelleştirmek için kullanılır
+
+# Uygulama konfigürasyonu
+app:
+  name: ase-guard-pulse
+  namespace: default
+  replicaCount: 2
+
+# Image konfigürasyonu
+image:
+  repository: muratozgon/ase-guard-pulse
+  tag: latest
+  pullPolicy: IfNotPresent
+
+# Service konfigürasyonu
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 80
+
+# Ingress konfigürasyonu
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: aseguvenlik.com
+      paths:
+        - path: /
+          pathType: Prefix
+    - host: www.aseguvenlik.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: aseguvenlik-tls
+      hosts:
+        - aseguvenlik.com
+        - www.aseguvenlik.com
+
+# Resource limits (opsiyonel)
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
+
+# Environment variables (eğer gerek olursa)
+env: []
+
+# Node selector (eğer gerek olursa)
+nodeSelector: {}
+
+# Tolerations (eğer gerek olursa)
+tolerations: []
+
+# Affinity (eğer gerek olursa)
+affinity: {}
